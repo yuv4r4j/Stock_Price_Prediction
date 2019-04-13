@@ -1,4 +1,4 @@
-name: prediction
+name: predictive_models
 dependencies:
   - python=3.6
   - cython=0.28.5
