@@ -51,10 +51,10 @@ source activate predictive_models
 
 ## Authors
 
-* **Chukka Priyanka Reddy** -  [Github](https://github.com/PurpleBooth)
+* **Chukka Priyanka Reddy** -  [Github](https://github.com/Pri0408)
 * **Prabu Manoharan** -  [Github](https://github.com/prabumanohar)
 * **Prashanth A** -  [Github](https://github.com/prash2912)
-* **Sudhahar Veeramohan** -  [Github](https://github.com/PurpleBooth)
+* **Sudhahar Veeramohan** -  [Github](https://github.com/SVAnalytics)
 * **Yuvaraj Ganesan** - [Github](https://github.com/yuv4r4j)
 
 See also the list of [contributors](https://github.com/yuv4r4j/Stock_Price_Prediction/graphs/contributors) who participated in this project.
