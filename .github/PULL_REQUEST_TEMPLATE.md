@@ -6,8 +6,6 @@
 
 #### Any background context you want to provide?
 
-#### What are the relevant tickets?
-
 #### Screenshots (if appropriate)
 
 #### What was one thing you learned while working on this task?
