@@ -19,3 +19,4 @@ dependencies:
   - pip:
     - pip==19.0.3
     - GetOldTweets3==0.0.9
+    - python-dotenv==0.9.1

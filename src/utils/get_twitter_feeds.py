@@ -4,9 +4,15 @@ from __future__ import division
 import csv
 import logging
 import os
+from pathlib import Path
 import time
+from dotenv import load_dotenv, find_dotenv
 
 import GetOldTweets3 as got
+
+
+# Load environment variables from file
+load_dotenv(find_dotenv())
 
 # create and confifure logger
 logging.basicConfig(
@@ -20,6 +26,9 @@ logger = logging.getLogger()
 
 
 def get_twitter_feed(search_string, start_date, end_date):
+    """
+    Downloads twitter feed for the given string
+    """
     logging.info(f"getting data for '{search_string}' string from {start_date} to {end_date}")
     since = time.time()
 
@@ -57,8 +66,13 @@ def get_twitter_feed(search_string, start_date, end_date):
 
 def main():
     logging.info('Downloading twitter feeds')
-    get_twitter_feed('infy', '2014-01-01', '2014-01-01')
-    get_twitter_feed('infy', '2014-01-02', '2014-01-02')
+    TWITTER_SEARCH_STRINGS = os.getenv('TWITTER_SEARCH_STRINGS')
+    print(TWITTER_SEARCH_STRINGS)
+    TWITTER_START_DATE = os.getenv('TWITTER_START_DATE')
+    TWITTER_END_DATE = os.getenv('TWITTER_END_DATE')
+    for TWITTER_SEARCH_STRING in TWITTER_SEARCH_STRINGS.split(','):
+        print(TWITTER_SEARCH_STRING)
+        get_twitter_feed(TWITTER_SEARCH_STRING, TWITTER_START_DATE, TWITTER_END_DATE)
     logging.info('Download compeleted')
 
 
