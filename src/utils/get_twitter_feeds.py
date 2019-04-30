@@ -44,7 +44,7 @@ def get_twitter_feed(search_string, start_date, end_date):
         ])
 
     # create the folder
-    folder_path = os.path.join('data', 'twitter_feeds')
+    folder_path = os.path.join(os.path.join('src', 'data'), 'twitter_feeds')
     os.makedirs(folder_path, exist_ok=True)
     feed_file_path = os.path.join(
         folder_path, f'{search_string}_{start_date}_to_{end_date}.csv')
