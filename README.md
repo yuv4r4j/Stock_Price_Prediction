@@ -42,11 +42,11 @@ Code check-in procedure:
 
 1. Install Miniconda (or Anaconda) to help manage your environment.
 1. Navigate to the repository's base folder
-1. Run the following command to set up (and activate) the `predictive_models` conda environment:
+1. Run the following command to set up (and activate) the `spp_models` conda environment:
 
 ```bash
 conda env create -f environment.yml
-source activate predictive_models
+source activate spp_models
 ```
 
 ## Authors
